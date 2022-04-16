@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+    <style>
+
+        body{
+            background-color: rgb(150, 210, 255);
+        }
+        form{
+        background-color: rgb(25, 0, 255);
+        width: 400px;
+        height: 400px;
+        position:absolute;
+
+        margin-top: 200px;
+        margin-left: 450px;
+        
+        border: 2px solid black;
+        
+            
+        }
+        #user
+        {
+        position:relative;
+        background-color:cornflowerblue;
+        width: 200px;
+        height: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 70px;
+        border: 2px solid black;
+        }
+        #pass
+        {
+        position:relative;
+        background-color:cornflowerblue;
+        width: 200px;
+        height: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        border: 2px solid black;
+        }
+        #submit
+        {
+        position:relative;
+        background-color:cornflowerblue;
+        width: 200px;
+        height: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        border: 2px solid black;
+        }
+        ::placeholder 
+        { 
+        color:rgb(50, 50, 50)
+        
+        }
+        
+        
+    </style>
+</head>
+
+
+<body>
+
+    <form action="/login" method="POST" >
+
+        <input id = "user" type="text" name="username" placeholder="USERNAME: ">
+        <br>
+        <input id = "pass" type="text" name="password" placeholder="PASSWORD: ">
+        <br>
+        <input id = "submit" type="submit" name="submit" >
+
+    </form>
+
+<script>
+
+</script>
+
+</body>
+
+</html>

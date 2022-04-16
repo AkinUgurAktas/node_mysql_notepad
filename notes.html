@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+    <style>
+        body
+        {
+            background-color: burlywood;
+        
+        }
+        form
+        {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+        }
+      
+    </style>
+</head>
+
+
+<body>
+
+    <form action="/notes" method="POST" >
+
+        <input id = "header" type="text"  name="header" placeholder="HEADER : ">
+        <br>
+        <br>
+        <textarea id="body" maxlength="1000" name="content"  placeholder="CONTENT : ">
+
+        </textarea>
+        <br>
+        <br>
+       
+        <input id = "submit" type="submit" name="submit" >
+
+    </form>
+    <p id = "result">.</p>
+
+
+<script>
+    
+    var yazi=document.querySelector('#body');  
+    var sonuc=document.querySelector('#result');  
+    
+    yazi.oninput=function(){
+        var maksimum=1000;
+        this.value=this.value.substr(0,maksimum);
+        var kalan= maksimum-this.value.length;
+        sonuc.innerHTML='Kalan Karakter : '+kalan;
+    }
+</script>
+
+</body>
+
+</html>
